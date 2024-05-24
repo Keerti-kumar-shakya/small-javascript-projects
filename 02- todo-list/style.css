@@ -47,8 +47,8 @@ main{
    flex-direction: column;
   justify-content:center;
   align-items: center;
-
-  min-height: 30vh;
+ margin-top: 50px;
+ 
 }
 
 .todo-list-action-container{
@@ -73,9 +73,7 @@ main{
   text-transform: capitalize;
   font-size: 20px;
   letter-spacing: 1px;
-
-
- 
+  padding-left: 10px;
 }
 
 .todo-date-css{
@@ -87,6 +85,8 @@ main{
 .todo-list-display-container{
   margin-top: 20px;
   border: 1px solid black;
+  display: grid;
+  row-gap: 10px;
 }
 
 .todo-list-container{

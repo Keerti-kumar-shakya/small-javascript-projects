@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
      <link rel="stylesheet" href="style.css">
-     <script src="./script.js"></script>
   </head>
   <body>
 
@@ -18,35 +17,36 @@
 
       <article class="container">
       <div class="click-btn-container">
-        <button class="btn-css rock-js">
+        <button class="btn-css btn-js" data-id="Rock">
           <img src="./images/Rock-emoji.png" alt="">
         </button>
 
-        <button class="btn-css paper-js">
+        <button class="btn-css btn-js" data-id="Paper">
           <img src="./images/Paper-emoji.png" alt="">
         </button>
 
-        <button class="btn-css scissor-js">
-          <img src="./images/Scissors-emoji.png" alt="">
+        <button class="btn-css btn-js" data-id="Scissor">
+          <img src="./images/Scissor-emoji.png" alt="">
         </button>
       </div>
 
-      <p class="js-results result-css">win</p>
+      <p class="js-results result-css">Results</p>
 
       <div class="js-display-player-results css-player-results">
-         <img class="img-display-css" src="./images/Paper-emoji.png" alt="">
-         <img class="img-display-css" src="./images/Scissors-emoji.png" alt="">
+   
       </div>
 
       <p class="js-score css-score">score</p>
 
       <div class="action-btn-container">
-        <button class="css-action-btn js-reset-btn">reset score</button>
-        <button class="css-action-btn js-auto-play">auto play</button>
+        <button class="css-action-btn js-action-btn" data-id="reset">reset score</button>
+        <button class="css-action-btn js-action-btn" data-id="autoplay">auto play</button>
       </div>
 
     </article>
+    
     </main>
     
+    <script src="./script.js" ></script>
   </body>
 </html>

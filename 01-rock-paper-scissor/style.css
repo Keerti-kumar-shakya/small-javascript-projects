@@ -51,6 +51,10 @@ font-size: 50px;
 color: white;
 }
 
+h2{
+  text-transform: uppercase;
+}
+
 .control-container{
   display: grid;
   place-items: center;
@@ -108,6 +112,7 @@ text-transform: uppercase;
 
 .css-player-results{
   display: flex;
+  align-items: center;
   column-gap: 20px;
 }
 

@@ -9,22 +9,33 @@
   </head>
   <body>
 
-    <nav>
+    <nav class="navbar-container">
+      <img class="heading-game-image" src="./images/R-P-S.png" alt="">
       <h1>Rock Paper Scissor</h1>
     </nav>
 
-    <main class="container">
+    <main class="control-container">
+
+      <article class="container">
       <div class="click-btn-container">
-        <button class="btn-css rock-js">rock</button>
-        <button class="btn-css paper-js">paper</button>
-        <button class="btn-css scissor-js">scissor</button>
+        <button class="btn-css rock-js">
+          <img src="./images/Rock-emoji.png" alt="">
+        </button>
+
+        <button class="btn-css paper-js">
+          <img src="./images/Paper-emoji.png" alt="">
+        </button>
+
+        <button class="btn-css scissor-js">
+          <img src="./images/Scissors-emoji.png" alt="">
+        </button>
       </div>
 
       <p class="js-results result-css">win</p>
 
       <div class="js-display-player-results css-player-results">
-         <img class="img-display-css" src="" alt="">
-         <img class="img-display-css" src="" alt="">
+         <img class="img-display-css" src="./images/Paper-emoji.png" alt="">
+         <img class="img-display-css" src="./images/Scissors-emoji.png" alt="">
       </div>
 
       <p class="js-score css-score">score</p>
@@ -33,6 +44,8 @@
         <button class="css-action-btn js-reset-btn">reset score</button>
         <button class="css-action-btn js-auto-play">auto play</button>
       </div>
+
+    </article>
     </main>
     
   </body>

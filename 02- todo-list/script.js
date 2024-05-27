@@ -1,6 +1,6 @@
 let todoStore = JSON.parse(localStorage.getItem('todoStore')) || []
 
-
+console.log(todoStore);
 function todoDisplay() {
   let html = '';
   todoStore.forEach((listItem, index) =>{
@@ -83,3 +83,46 @@ function todoList() {
 function storageTodoList() {
   localStorage.setItem('todoStore',JSON.stringify(todoStore))
 }
+
+
+const searchBtn = document.querySelector('.search-btn-js');
+searchBtn.addEventListener('click', () =>{
+  search()
+})
+
+function search() {
+
+ const searchInput = document.querySelector('.search-todo-js');
+ const searchValue = searchInput.value;
+ const searchResult = todoStore.filter( (e) => e.name === searchValue)
+
+ const searchSimilarResult = searchResult;
+
+console.log(searchSimilarResult);
+ let html = '';
+
+ searchSimilarResult.forEach((result, index) =>{
+  console.log(result);
+ const {name, date} = result;
+  html += `
+<div class = "list-search-css">
+  <p class="search-name">${name}</p>
+  <p class="search-date">${date}</p>
+</div>
+ `
+ })
+
+ document.querySelector('.js-search-display').innerHTML  = html;
+
+ document.querySelector('.js-search-display').classList.add('search-display-active');
+
+setTimeout(() => {
+  document.querySelector('.js-search-display').classList.remove('search-display-active');
+}, 3000);
+
+searchInput.value = '';
+
+}
+
+
+

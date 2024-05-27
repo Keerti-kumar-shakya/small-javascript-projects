@@ -6,11 +6,11 @@
 }
 
 body{
-
+background-color: rgb(225, 252, 250);
 }
 
 header{
-  border: 1px solid black;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -43,7 +43,6 @@ h1{
 }
 
 main{
-  border:1px solid red;
    display: flex;
    flex-direction: column;
   justify-content:center;
@@ -53,7 +52,6 @@ main{
 }
 
 .todo-list-action-container{
-  border:1px solid black;
   display: grid;
   grid-template-columns: 250px 250px 110px;
   column-gap: 20px;
@@ -85,13 +83,11 @@ main{
 
 .todo-list-display-container{
   margin-top: 20px;
-  border: 1px solid black;
   display: grid;
   row-gap: 10px;
 }
 
 .todo-list-container{
-  border: 1px solid violet;
   display: grid;
   grid-template-columns: 250px 250px 110px;
 align-items: center;
@@ -117,7 +113,6 @@ text-transform: capitalize;
 }
 
 .search-main-container{
-  border: 1px solid black;
   display: grid;
   position: relative;
 }
@@ -146,7 +141,6 @@ color: white;
 .search-display-css{
   display: none;
   width: 100%;
-  border: 1px solid black;
   background-color: white;
 position: absolute;
 top: 39px;

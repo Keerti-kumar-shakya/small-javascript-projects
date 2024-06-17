@@ -1,6 +1,5 @@
 let todoStore = JSON.parse(localStorage.getItem('todoStore')) || []
 
-console.log(todoStore);
 function todoDisplay() {
   let html = '';
   todoStore.forEach((listItem, index) =>{
@@ -97,7 +96,7 @@ function search() {
  const searchResult = todoStore.filter( (e) => e.name === searchValue)
 
  const searchSimilarResult = searchResult;
-
+(searchResult.length === 0)&&alert('There is no such result in todo list. Please try again.');
 console.log(searchSimilarResult);
  let html = '';
 

@@ -52,7 +52,6 @@
 }
 
 body{
-
   width: 80rem;
   margin: 60px auto 60px auto;
   background-color: var(--clr-grey-10);
@@ -107,14 +106,12 @@ transition: 0.25s;
 }
 
 .menu-container{
-
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 629.5px 629.5px;
 gap:30px 20px;
 }
 
 .single-menu-container{
-
   display:grid;
   grid-template-columns: 200px auto;
   column-gap: 20px;
@@ -158,5 +155,12 @@ text-transform: capitalize;
 .desc{
  
   color: var(--clr-grey-5);
+}
+
+@media (max-width: 768px) {
+  .menu-container{
+    grid-template-columns: 629.5px;
+
+  }
 }
 
